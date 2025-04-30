@@ -3,6 +3,11 @@ Speech-to-text + speaker diarisation pipeline.
 
 Usage
 -----
+Экспортитровать wav из видео.
+```shell
+ffmpeg -i input_video.mov -vn -acodec pcm_s16le -ar 16000 -ac 1 output_audio.wav
+```
+
 Заполнить блок Configuration. Положить в папку со скриптом файл в формате wav. \
 Запустить.
 ```shell
